@@ -2,6 +2,6 @@ require 'pry'
 
 def my_find(collection)
   collection.each do |element|
-    return 
+    return element if yield(element)
   end
 end
